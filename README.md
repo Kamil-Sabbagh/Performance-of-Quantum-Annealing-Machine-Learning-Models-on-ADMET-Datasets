@@ -1,23 +1,56 @@
-# -Support-Vector-Machine-Implementation-on-D-Wave-Quantum-Annealer
+# Performance of Quantum Annealing Machine Learning Models on ADMET Datasets
 
-This is the official implementation of the ICCS Proceedings Portfolio Optimisation Using the D-Wave Quantum Annealer.
-[Paper-ICCS](https://link.springer.com/chapter/10.1007/978-3-030-77980-1_7)
+This repository contains the official implementation of the paper titled **"Performance of Quantum Annealing Machine Learning Models on ADMET Datasets"**. You can access the paper at the following link:(not available yet).
 
-## Citation 
-If you find our work useful for your research, please consider the following citation 
+## Prerequisites
+
+Before running the code, ensure you have the following set up:
+
+### 1. D-Wave Quantum Annealer Configuration
+
+To use the D-Wave Quantum Annealer, you need to create a configuration file `dwave.conf` with your D-Wave API token. The file should contain the following information:
+
 ```
-@inproceedings{bhatia2021performance,
-  title={Performance analysis of support vector machine implementations on the D-wave quantum annealer},
-  author={Bhatia, Harshil Singh and Phillipson, Frank},
-  booktitle={International Conference on Computational Science},
-  pages={84--97},
-  year={2021},
-  organization={Springer}
-}
+[defaults]
+token = "add your token here"
+```
+
+### 2. Python Version
+
+We are using **Python 3.12.4**. You can download and install this version from [here](https://www.python.org/downloads/).
+
+### 3. Dataset Setup
+
+Ensure all datasets are stored in the `alldatasets` directory. The method for generating these datasets is explained in the paper.
+
+### 4. Installing Dependencies
+
+Once you've prepared the configuration and datasets, install the required Python dependencies by running:
+
+```
+pip install -r requirements.txt
 ```
 
 ## Running the Code
-Execute the Main.py file.
 
-## Data
-We have used the IRIS Dataset ([link](https://archive.ics.uci.edu/ml/datasets/iris)) and Banknote Authentication Dataset ([link](https://archive.ics.uci.edu/ml/datasets/banknote+authentication)).
+To run the quantum machine learning experiments, execute the following command:
+
+```
+python3 Qexperiments.py
+```
+
+### Cross-Validation (Optional)
+
+If you want to run the code with cross-validation for the **Quantum Support Vector Machine (QSVM)** method, use the `--cross-validation` flag:
+
+```
+python3 Qexperiments.py --cross-validation
+```
+
+## Datasets
+
+The ADMET datasets used in this project can be found at the following link: [ADMET Datasets](https://tdcommons.ai/benchmark/overview/).
+
+---
+
+For further details on dataset generation, model training, and experiment results, please refer to the paper.
