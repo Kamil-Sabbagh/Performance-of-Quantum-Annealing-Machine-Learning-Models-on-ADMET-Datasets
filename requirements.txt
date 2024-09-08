@@ -1,0 +1,10 @@
+dwave_cloud_client==0.11.3
+dwave_neal==0.6.0
+dwave_preprocessing==0.6.5
+dwave_samplers==1.2.0
+dwave_system==1.23.0
+matplotlib==3.8.3
+numpy==1.26.4
+pandas==2.2.1
+scikit_learn==1.4.1.post1
+ucimlrepo==0.0.6
