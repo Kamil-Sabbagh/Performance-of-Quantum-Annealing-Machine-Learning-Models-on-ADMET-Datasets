@@ -12,3 +12,4 @@ processed_datasets
 *.zip
 !requirements.txt
 *.jpg
+.*

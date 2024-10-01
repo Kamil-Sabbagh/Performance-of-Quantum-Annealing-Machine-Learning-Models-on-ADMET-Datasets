@@ -6,6 +6,10 @@ This repository contains the official implementation of the paper titled **"Perf
 
 Before running the code, ensure you have the following set up:
 
+## Datasets Used
+
+The datasets used can be found [here](https://drive.google.com/drive/folders/1oSFcPrGwyeXtfEubGFLE5VsGpJmRvJIt?usp=sharing).
+
 ### 1. D-Wave Quantum Annealer Configuration
 
 To use the D-Wave Quantum Annealer, you need to create a configuration file `dwave.conf` with your D-Wave API token. The file should contain the following information:
